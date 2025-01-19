@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "Arduino"
+		},
+		{
+			"name": "ESP32-DevKit",
+			"path": "ESP32-DevKit"
+		},
+		{
+			"name": "ESP32",
+			"path": "ESP32"
+		}
+	],
+	"settings": {}
+}
