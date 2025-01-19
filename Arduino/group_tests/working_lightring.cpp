@@ -2,7 +2,7 @@
 
 #define NUMPIXELS    16
 #define switchPin    3
-#define NEOPIXEL_PIN 6
+#define NEOPIXEL_PIN 4
 
 Adafruit_NeoPixel pixels = Adafruit_NeoPixel(NUMPIXELS, NEOPIXEL_PIN, NEO_GRB + NEO_KHZ800);
 
@@ -18,37 +18,15 @@ void setup() {
 }
 
 void loop() {
-  int switchState = digitalRead(switchPin);
-  
-  if (switchState == HIGH) {
-    Serial.println("Switch ON");
-
-    // setColor();
-    // for (int i = 0; i < NUMPIXELS; i++) {
-    //   // pixels.setPixelColor(i, pixels.Color(255, 0, 0)); 
-    //   pixels.setPixelColor(i, pixels.Color(redColor, greenColor, blueColor));
-    // }
-    // pixels.show();
-    // delay(delayval);
-
-  } else {
-    Serial.println("Switch OFF");
-
-    pixels.clear();
-    pixels.show();
-  }
-      setColor();
+    setColor();
     for (int i = 0; i < NUMPIXELS; i++) {
       // pixels.setPixelColor(i, pixels.Color(255, 0, 0)); 
       pixels.setPixelColor(i, pixels.Color(redColor, greenColor, blueColor));
     }
     pixels.show();
     delay(delayval);
-
-  
-   
-
 }
+
 
 void setColor(){
   redColor = random(0, 255);
