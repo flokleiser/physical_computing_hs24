@@ -23,42 +23,21 @@ void loop() {
   int switchState = digitalRead(switchPin);
   
   if (switchState == HIGH) {
-    // Serial.println("Switch ON");
-
-    // if (!isFilled) {
         for (int i = 0; i < NUMPIXELS; i++) {
         pixels.setPixelColor(i, pixels.Color(255, 0, 0)); 
             pixels.show();
             delay(delayval);
             Serial.println(i);
-
-            // if (i == NUMPIXELS){
-            //     isFilled = true;
-            // }
-        // }
+        } 
+  } else if (switchState == LOW) {
+        // for (int i = 0; i < NUMPIXELS; i++) {
+        for (int i = NUMPIXELS; i > -1; i--){
+            pixels.setPixelColor(i, pixels.Color(0, 0, 0)); 
+            pixels.show();
+            delay(delayval);
+            Serial.println(i);
+        }
     }
-    // if (isFilled) {
-        // for (int i = NUMPIXELS; i < 0; i--) {
-        //     pixels.setPixelColor(i, pixels.Color(255, 0, 0)); 
-        // pixels.show();
-        // delay(delayval);
-        // if (i == 0) {
-        // isFilled = true;
-        // }
-    // }
-
-  } 
-  if (switchState == LOW) {
-
-    for (int i = 0; i < NUMPIXELS; i++) {
-        pixels.setPixelColor(i, pixels.Color(0, 0, 0)); 
-        pixels.show();
-        delay(delayval);
-        Serial.println(i);
-    }
-
-    // pixels.clear();
-    // pixels.show();
 }
 
 
