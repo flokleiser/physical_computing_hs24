@@ -7,8 +7,8 @@
 #define potPIN 16
 
 USBHIDConsumerControl ConsumerControl;
-USBHIDKeyboard Keyboard;   
 USBHIDMouse Mouse;
+USBHIDKeyboard Keyboard;   
 
 const int threshold = 1;     // Minimum change to detect movement
 const int numSteps = 10;     // Number of steps to map the potentiometer range

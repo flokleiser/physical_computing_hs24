@@ -98,7 +98,6 @@ int encoderPosition = 0;
 
 // USB HID consumer control object
 USBHIDConsumerControl ConsumerControl;
-USBHIDRelativeMouse Mouse;
 
 // Counter for fine scrolling
 float scrollAccumulator = 0.0;
