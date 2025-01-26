@@ -1,8 +1,19 @@
 # Physical Computing HS24
 
-### How to use Teleplot:
-seperate:   print(">{variable}")
-then:       println(variable)
+Collection of files from the Physical Computing Module from HS24 IAD.
 
-### TODO:
-- [ ] get esp32 to work
+
+### How to use Teleplot:
+
+seperate:   
+
+    print(">{variable}")
+
+
+then:
+
+    println(variable)
+
+### Issues:
+
+Esp32 Serial.println works weird
