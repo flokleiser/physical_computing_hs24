@@ -3,7 +3,9 @@
 Collection of files from the Physical Computing Module from HS24 IAD.
 
 
-### How to use Teleplot:
+___
+
+### <ins>How to use Teleplot:
 
 seperate:   
 
@@ -14,6 +16,8 @@ then:
 
     println(variable)
 
-### Issues:
+___
+
+### <ins>Issues:
 
 Esp32 Serial.println works weird
