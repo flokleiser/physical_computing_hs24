@@ -10,14 +10,14 @@ USBHIDConsumerControl ConsumerControl;
 USBHIDMouse Mouse;
 USBHIDKeyboard Keyboard;   
 
-const int threshold = 1;     // Minimum change to detect movement
-const int numSteps = 10;     // Number of steps to map the potentiometer range
-const int delayTime = 10;    // Small delay for keypress registration
+const int threshold = 1;     
+const int numSteps = 10;     
+const int delayTime = 10;    
 const int loopDelay = 100;  
 
-int potValue = 0;            // Current potentiometer value
-int prevPotValue = 0;        // Previous potentiometer value
-int mappedValue = 0;         // Mapped value from 1 to 10
+int potValue = 0;            
+int prevPotValue = 0;        
+int mappedValue = 0;         
 int prevMappedValue = 0;   
 int mappedPotValue = 0;
 int numTabs = 9;
